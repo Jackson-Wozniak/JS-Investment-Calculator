@@ -12,4 +12,4 @@ Will add the ability to contribute extra each year to make the tool more accurat
 ---
 Screenshots
 
-![Screenshot (16)](https://user-images.githubusercontent.com/105665813/179122326-656eab54-eb5e-4a73-a9ce-50d362a8a0b9.png)
+![Screenshot (18)](https://user-images.githubusercontent.com/105665813/179125949-22210d3b-5ee6-48c7-b8b9-5c5c62823345.png)
