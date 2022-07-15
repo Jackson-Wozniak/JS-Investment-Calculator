@@ -2,6 +2,7 @@ const submitButton = document.getElementById("submit");
 let countEachYear = [];
 let accountValuePerYear = [];
 var totalInvestmentValue = 0;
+internationalNumberFormat = new Intl.NumberFormat('en-US')
 
 submitButton.onclick = function calculate() {
     const startingAmount = parseInt(document.getElementById("starting-amount").value);
@@ -22,7 +23,7 @@ function calculateFinalAmount(start, interest, duration){
     this.totalInvestmentValue = 
         Math.round(finalAmount.toString() * 100.00) / 100.00;
     document.getElementById("output-text").innerText = '$' 
-            + this.totalInvestmentValue;
+            + internationalNumberFormat.format(this.totalInvestmentValue);
     createChart();
 }
 
@@ -37,8 +38,8 @@ function createChart(){
             labels: countEachYear,
             datasets: [{
                 data: accountValuePerYear,
-                fill : false,
-                backgroundColor: 'rgba(59, 209, 111)',
+                fill : true,
+                backgroundColor: 'rgba(59, 209, 111, .1)',
                 borderColor: 'rgba(59, 209, 111)',
                 borderWidth: 1
             }]
@@ -50,15 +51,15 @@ function createChart(){
                 text: 'Portfolio Growth',
                 color : 'rgba(59, 209, 111)',
                 font: {
-                  size: 30
+                    size: 30
                 }
-              },
-              legend: {
+            },
+            legend: {
                 display: false
-             },
-             subtitle: {
+            },
+            subtitle: {
                 display: true,
-                text: '$' + this.totalInvestmentValue,
+                text: '$' + internationalNumberFormat.format(this.totalInvestmentValue),
                 color : 'rgba(255,255,255)',
                 font : {
                     size : 20
