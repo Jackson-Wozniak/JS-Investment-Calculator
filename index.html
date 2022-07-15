@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="calculator-div">
+    <div class="input-div">
+        <h2>Investment Information</h2>
+        <label for="starting-amount">Starting Amount</label>
+        <br>
+        <input type="number" id="starting-amount" placeholder="Starting Amount">
+        <br>
+        <label for="interest-rate">Interest Rate</label>
+        <br>
+        <input type="number" id="interest-rate" placeholder="Interest Rate">
+        <br>
+        <label for="years">Investment Duration</label>
+        <br>
+        <input type="number" id="years" placeholder="Investment Duration">
+        <br>
+        <input type="submit" id="submit" value="CALCULATE">
+        <br>
+        <br>
+
+        <h3>Final Amount:</h3>
+        <br>
+        <h4 id="output-text"></h4>
+    </div>
+    <br>
+    <div class="panel">
+        <div class="chart-container">
+            <canvas id="myChart" width="600" height="400" style="max-height : 400px; max-width : 600px"></canvas>
+        </div>
+    </div>
+
+</div>
+    
+    
+    
+    <script src="calculator.js"></script>
+</body>
+</html>

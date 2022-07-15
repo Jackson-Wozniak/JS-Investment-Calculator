@@ -1,0 +1,89 @@
+* {
+    margin : 0;
+    padding : 0;
+    font-family: 'Geneva', sans-serif;
+}
+body {
+    padding : 0;
+    margin : 0;
+    background-color: #161b22;
+}
+
+.calculator-div {
+    display: flex;
+}
+
+.input-div {
+    width: 300px;
+    height : 400px;
+    position : absolute;
+    top : 0%;
+    left : 25%;
+    transform : translate(-50%, 15%);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px, rgba(0,0,0);
+    padding : 20px 0px;
+    text-align: center;
+    border : 1px solid rgba(59, 209, 111);
+}
+
+h2 {
+    color : rgba(59, 209, 111);
+    margin-bottom: 20px;
+    font-size: 18;
+}
+label {
+    color : white;
+    margin : 10px;
+}
+
+input {
+    background-color: #21262d;
+    color : white;
+    width: 250px;
+    height : 30px;
+    margin : 10px;
+    padding : 5px;
+    border : none;
+    outline : none;
+    text-align: center;
+    border : 1px solid rgba(59, 209, 111);
+}
+
+#submit {
+    text-align: center;
+    color : #21262d;
+    font : bold;
+    border : 1px solid #21262d;
+    margin : 10px;
+    padding : 5px;
+    background-color: rgba(59, 209, 111);
+    width : 100px;
+}
+
+.panel {
+    display: flex;
+    position : absolute;
+    width : 700px;
+    height : 436px;
+    top : 0%;
+    left : 40%;
+    transform : translate(0%, 16%);
+    border : 1px solid rgba(59, 209, 111);
+}
+.chart-container {
+    position: relative;
+    flex-grow: 1;
+    min-height: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    color : white;
+}
+
+h4 {
+    color : rgba(59, 209, 111);
+}
